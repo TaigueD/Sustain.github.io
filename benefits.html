@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benefits of using stainless steel water bottles">
+    <title>Benefits of Stainless Steel Bottles</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+ body {
+            font-family: Arial, sans-serif; /* Set a default font */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333; /* Dark background for header */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding for header */
+            text-align: center; /* Center the text */
+        }
+
+        nav {
+            background-color: #444; /* Darker background for navigation */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            text-align: center; /* Center the navigation items */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items inline */
+            margin: 0 15px; /* Space between items */
+        }
+
+        nav ul li a {
+            color: white; /* White text for links */
+            text-decoration: none; /* Remove underline */
+        }
+
+        main {
+            padding: 20px; /* Padding for main content */
+        }
+
+        footer {
+            padding: 20px; /* Padding for footer */
+            text-align: center; /* Center the footer text */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block; /* Stack navigation items vertically on small screens */
+                margin: 10px 0; /* Space between items */
+            }
+
+            #notification {
+                right: 10px; /* Adjust position for smaller screens */
+                bottom: 10px; /* Adjust position for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px; /* Increase padding for smaller screens */
+            }
+
+            main {
+                padding: 10px; /* Reduce padding for main content */
+            }
+
+            form {
+                display: flex; /* Use flexbox for form layout */
+                flex-direction: column; /* Stack form elements vertically */
+            }
+
+            form input, form textarea {
+                width: 100%; /* Make form inputs full width */
+                margin-bottom: 10px; /* Space between inputs */
+            }
+        }
+        #notification {
+            display: none; /* Hidden by default */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 15px; /* Some padding */
+            position: fixed; /* Sit on top */
+            right: 30px; /* Position it to the right */
+            bottom: 30px; /* Position it from the bottom */
+            z-index: 1; /* Make sure it does not overlap */
+            border-radius: 5px; /* Rounded corners */
+        }
+ #facts-container {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #new-fact-button {
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    #new-fact-button:hover {
+        background-color: #45a049; /* Darker green */
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Benefits of Stainless Steel Water Bottles</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="care.html">Care Tips</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Key Benefits</h2>
+        <table>
+            <tr>
+                <th>Benefit</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Eco-Friendly</td>
+                <td>Reduces plastic waste and promotes sustainability.</td>
+            </tr>
+            <tr>
+                <td>Durability</td>
+                <td>Resistant to impact and corrosion.</td>
+            </tr>
+            <tr>
+                <td>Temperature Control</td>
+                <td>Keeps drinks cold for 12 hours or hot for 6 hours.</td>
+            </tr>
+        </table>
+                <div class="benefits">
+            <h2>Did You Know?</h2>
+            <div id="facts-container">
+                <p id="random-fact">Loading a random fact...</p>
+                <button id="new-fact-button">Get Another Fact</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us: <a href="mailto:info@sustainablebottles.com">info@sustainablebottles.com</a></p>
+        <p>Learn more: <a href="https://www.hydroflask.com/bottles" target="_blank">Hydro Flask</a></p>
+    </footer>
+ <script>
+        // Array of facts about stainless steel water bottles
+        const stainlessSteelFacts = [
+            "Stainless steel water bottles are reusable and can last a lifetime.",
+            "They are BPA-free, making them a safer choice for hydration.",
+            "Stainless steel is 100% recyclable.",
+ "Switching to a stainless steel bottle can prevent 167 single-use plastic bottles per person per year entering landfills or oceans.",
+	 "Stainless steel doesn't retain flavors or smells like plastic does.",
+            "Using stainless steel bottles can save you money in the long run."
+        ];
+
+        function getRandomFact() {
+            const randomIndex = Math.floor(Math.random() * stainlessSteelFacts.length);
+            document.getElementById("random-fact").innerText = stainlessSteelFacts[randomIndex];
+        }
+
+        document.getElementById("new-fact-button").addEventListener("click", getRandomFact);
+
+        // Load a random fact on page load
+        window.onload = getRandomFact;
+    </script>
+</body>
+</html>

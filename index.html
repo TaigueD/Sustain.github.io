@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for sustainable stainless steel water bottles">
+    <meta name="keywords" content="stainless steel, water bottles, eco-friendly, hydration, sustainable, reusable">
+    <title>Benefits of Stainless Steel Water Bottles | Eco-Friendly Hydration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+ <style>
+ body {
+            font-family: Arial, sans-serif; /* Set a default font */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333; /* Dark background for header */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding for header */
+            text-align: center; /* Center the text */
+        }
+
+        nav {
+            background-color: #444; /* Darker background for navigation */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            text-align: center; /* Center the navigation items */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items inline */
+            margin: 0 15px; /* Space between items */
+        }
+
+        nav ul li a {
+            color: white; /* White text for links */
+            text-decoration: none; /* Remove underline */
+        }
+
+        main {
+            padding: 20px; /* Padding for main content */
+        }
+
+        footer {
+            padding: 20px; /* Padding for footer */
+            text-align: center; /* Center the footer text */
+        }
+        .slideshow-container {
+            position: relative; /* Position relative for absolute positioning of slides */
+            max-width: 100%; /* Ensure it fits within the container */
+            margin: auto; /* Center the slideshow */
+        }
+
+        .slide {
+            display: none; /* Hide all slides by default */
+        }
+
+        img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Dots for slideshow */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171; /* Active dot color */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block; /* Stack navigation items vertically on small screens */
+                margin: 10px 0; /* Space between items */
+            }
+
+            #notification {
+                right: 10px; /* Adjust position for smaller screens */
+                bottom: 10px; /* Adjust position for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px; /* Increase padding for smaller screens */
+            }
+
+            main {
+                padding: 10px; /* Reduce padding for main content */
+            }
+
+            form {
+                display: flex; /* Use flexbox for form layout */
+                flex-direction: column; /* Stack form elements vertically */
+            }
+
+            form input, form textarea {
+                width: 100%; /* Make form inputs full width */
+                margin-bottom: 10px; /* Space between inputs */
+            }
+        }
+        #notification {
+            display: none; /* Hidden by default */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 15px; /* Some padding */
+            position: fixed; /* Sit on top */
+            right: 30px; /* Position it to the right */
+            bottom: 30px; /* Position it from the bottom */
+            z-index: 1; /* Make sure it does not overlap */
+            border-radius: 5px; /* Rounded corners */
+        }
+.share-buttons {
+            margin-top: 20px; /* Space above the share buttons */
+            text-align: center; /* Center the share buttons */
+        }
+
+        .share-buttons img {
+            width: 30px; /* Set a smaller width for the images */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 5px; /* Space between images */
+            cursor: pointer; /* Change cursor to pointer for clickable images */
+            display: inline-block; /* Ensure images are displayed inline */
+        }
+</style>
+ </head>
+<body>
+    <header>
+        <h1>Welcome to Sustainable Water Bottles</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="care.html">Care Tips</a></li>
+        </ul>
+    </nav>
+    <main>
+         <h2>Why Choose Stainless Steel?</h2>
+        <p>Stainless steel water bottles are eco-friendly, reusable, and durable. They help reduce plastic waste and keep your beverages at the desired temperature.</p>
+       
+ <div class="slideshow-container">
+        <div class="slide">
+            <img src="Stainlessindex.jpg" alt="Description of Image 1">
+        </div>
+        <div class="slide">
+            <img src="Stainlessbenefits.jpg" alt="Description of Image 2">
+        </div>
+        <div class="slide">
+            <img src="Stainlesscare.jpg" alt="Description of Image 3">
+        </div>
+    </div>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    </main>
+    <footer>
+
+<h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+ <p>Contact us: <a href="mailto:info@sustainablebottles.com">info@sustainablebottles.com</a></p>
+        <p>Learn more: <a href="https://www.ecowayhouseware.com" target="_blank">EcoWay Houseware</a>
+        <div class="share-buttons">
+            <h3>Share This Page:</h3>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank">
+                <img src="facebookicon.png" alt="Share on Facebook">
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://example.com&text=Check out this sustainable water bottle!" target="_blank">
+                <img src="twittericon.png" alt="Share on Twitter">
+            </a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://example.com&title=Sustainable Water Bottles" target="_blank">
+                <img src="linkedinicon.png" alt="Share on LinkedIn">
+            </a>
+        </div>
+    </footer>
+ <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Thank you for your message! We will get back to you soon.");
+        }
+
+ let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; // Hide all slides
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1} // Reset to first slide
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", ""); // Remove active class from dots
+        }
+        slides[slideIndex - 1].style.display = "block"; // Show the current slide
+        dots[slideIndex - 1].className += " active"; // Add active class to the current dot
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    function currentSlide(n) {
+        slideIndex = n - 1; // Set the current slide index
+        showSlides(); // Show the current slide
+    }
+
+    </script>
+</body>
+</html>
